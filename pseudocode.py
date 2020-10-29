@@ -4,10 +4,11 @@
 
 """Main Features
     1. Add Notes
-    2. Notes can hold code
+    2. Notes can hold code - mardown
     3. Edit Notes
     4. Sort Notes by recents (ID), and alphabetical order
     5. Search Notes from the database
+    6. maybe log in feature?
      """
 
 
@@ -29,3 +30,5 @@
 #https://www.youtube.com/watch?v=4iYquLKgqMU&ab_channel=AlexanderPutilin
 #https://charlesleifer.com/blog/saturday-morning-hack-a-little-note-taking-app-with-flask/
 #https://github.com/ShubhamPy/Note-Taking-App
+#https://realpython.com/introduction-to-flask-part-2-creating-a-login-page/
+#https://www.section.io/engineering-education/user-login-web-system/
