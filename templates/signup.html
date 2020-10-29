@@ -94,12 +94,12 @@
     <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide">NODE</a>
+      <a href="{{url_for('index')}}" class="w3-bar-item w3-button w3-wide">NODE</a>
     <!-- navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-        <a href="app.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> APP</a>
+        <a href="{{url_for('about')}}" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="{{url_for('team')}}" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+        <a href="{{url_for('application')}}" class="w3-bar-item w3-button"><i class="fa fa-th"></i> APP</a>
       </div>
     <!-- Adjustable right-floated links on small screens-->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -109,11 +109,11 @@
   </div>
     <!-- sidebar menu links -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-        <a href="app.html" onclick="w3_close()" class="w3-bar-item w3-button">APP</a>
-    </nav>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="{{url_for('about')}}" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="{{url_for('team')}}" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      <a href="{{url_for('application')}}" onclick="w3_close()" class="w3-bar-item w3-button">APP</a>
+  </nav>
     <!--Sign Up Form-->
     <form action="action_page.php" style="border:60px solid rgb(255, 255, 255)">
         <div class="container">
@@ -131,10 +131,11 @@
           <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
       
       
-          <p>By creating an account you agree to our <a href="terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          <p>By creating an account you agree to our <a href="{{url_for('terms')}}" style="color:dodgerblue">Terms & Privacy</a>.</p>
       
           <div class="clearfix">
             <button type="submit" class="signupbtn">Sign Up</button>
+            <a href="{{url_for('login')}}" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity  w3-hover-opacity-on" role="button">Cancel</a>
           </div>
         </div>
     </form>

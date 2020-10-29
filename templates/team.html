@@ -27,12 +27,12 @@
     <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="index.html" class="w3-bar-item w3-button w3-wide">NODE</a>
+      <a href="{{url_for('index')}}" class="w3-bar-item w3-button w3-wide">NODE</a>
     <!-- navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-        <a href="app.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> APP</a>
+        <a href="{{url_for('about')}}" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="{{url_for('team')}}" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+        <a href="{{url_for('application')}}" class="w3-bar-item w3-button"><i class="fa fa-th"></i> APP</a>
       </div>
     <!-- Adjustable right-floated links on small screens-->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -42,15 +42,15 @@
   </div>
     <!-- sidebar menu links -->
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-        <a href="app.html" onclick="w3_close()" class="w3-bar-item w3-button">APP</a>
-    </nav>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+      <a href="{{url_for('about')}}" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="{{url_for('team')}}" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+      <a href="{{url_for('application')}}" onclick="w3_close()" class="w3-bar-item w3-button">APP</a>
+  </nav>
     <!-- Content -->
     <div class="w3-container" style="padding:128px 20px" id="team">
         <h3 class="w3-center">THE TEAM</h3><br>
-        <p class="w3-center w3-large">We are the students from Problem Solving and Software Design class at Babson College.</p><br>
+        <p class="w3-center w3-large">We are the students from Problem Solving and Software Design class at Babson College.</p>
         <div class="w3-row-padding" style="margin-top:100px">
           <div class="w3-col l3 m6 w3-margin-bottom" >
             <div class="w3-card">
