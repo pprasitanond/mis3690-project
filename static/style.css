@@ -1,0 +1,187 @@
+
+/* about & application */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+/* Full height image header - home page */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://i.pinimg.com/originals/56/f9/e2/56f9e272de8708a62f2b94d941382415.jpg");
+    min-height: 100%;
+}
+
+
+/* login */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+.w3-bar .w3-button {
+        padding: 16px;
+    }
+/*Log In Form Styling
+    /* Bordered form */
+    
+form {
+    border: 3px solid #ffffff;
+    }
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+
+/* Set a style for all buttons */
+button {
+    background-color: rgb(240, 239, 215);
+    color: rgb(14, 1, 1);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    }
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+    }
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+    }
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 2px;
+    }
+
+/* Change styles for span and sign up button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+        display: block;
+        float: none;
+    }
+    
+    }
+
+/* sign up */
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+.w3-bar .w3-button {
+        padding: 16px;
+    }
+    /*Sign In Form Styling
+    /* Bordered form */
+    * {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    }
+
+/* Set a style for all buttons */
+button {
+    background-color:rgb(240, 239, 215);
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    }
+
+button:hover {
+opacity:1;
+    }
+/* Float signup buttons and add an equal width */
+.signupbtn {
+    float: left;
+    width: 100%;
+    }
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+    }
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+.signupbtn {
+        width: 100%;
+    }
+span.psw {
+        display: block;
+        float: none;
+    }
+    }
+
+/* team */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    }
+
+.w3-bar .w3-button {
+    padding: 16px;
+    }
+
+/* userpage */
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    }
+
+.w3-bar .w3-button {
+    padding: 16px;
+    }

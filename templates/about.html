@@ -1,86 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
-    <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-    body, html {
-        height: 100%;
-        line-height: 1.8;
-    }
+{% extends "layout.html"%}
+{% block title %} 
+About Us
+{% endblock %}
 
-    .w3-bar .w3-button {
-        padding: 16px;
-    }
-    </style>
-</head>
-
-<body>
-    <!-- Navbar -->
-<div class="w3-top">
-    <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="{{url_for('index')}}" class="w3-bar-item w3-button w3-wide">NODE</a>
-    <!-- navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="{{url_for('about')}}" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="{{url_for('team')}}" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="{{url_for('application')}}" class="w3-bar-item w3-button"><i class="fa fa-th"></i> APP</a>
+{%block body%}
+<div class="w3-container" style="padding:128px 20px" id="about"><br>
+  <h3 class="w3-center">ABOUT OUR APPLICATION</h3><br>
+  <p class="w3-center w3-large"> 
+      This is a note taking application that will allow users to create a note and keep it stored from wherever they are. 
+      This is a very simple, yet elegant way of taking notes as we implemented features that allows users to take clean note and embed coding language in the note.
+      We hope for this application to be a useful tool for our users, especially those who are working with code. 
+  </p><br>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class='fas fa-laptop' style='font-size:65px;color:grey'></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
-    <!-- Adjustable right-floated links on small screens-->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-        <i class="fa fa-bars"></i>
-      </a>
+    <div class="w3-quarter">
+      <i class='fas fa-laptop-code' style='font-size:65px;color:grey'></i>
+      <p class="w3-large">Code</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
     </div>
+    <div class="w3-quarter">
+      <i class='far fa-folder-open' style='font-size:65px;color:grey'></i>
+      <p class="w3-large">Storage</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class='far fa-list-alt' style='font-size:65px;color:grey'></i>
+      <p class="w3-large">Organize</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p><br><br>
+    </div>
+    <!--Button-->
+    <a href="{{url_for('application')}}" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity  w3-hover-opacity-on" role="button" >
+      Click here to begin
+    </a>
   </div>
-    <!-- sidebar menu links -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="{{url_for('about')}}" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="{{url_for('team')}}" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-      <a href="{{url_for('application')}}" onclick="w3_close()" class="w3-bar-item w3-button">APP</a>
-  </nav>
-    <!--Content-->
-    <div class="w3-container" style="padding:128px 20px" id="about"><br>
-        <h3 class="w3-center">ABOUT OUR APPLICATION</h3><br>
-        <p class="w3-center w3-large"> 
-            This is a note taking application that will allow users to create a note and keep it stored from wherever they are. 
-            This is a very simple, yet elegant way of taking notes as we implemented features that allows users to take clean note and embed coding language in the note.
-            We hope for this application to be a useful tool for our users, especially those who are working with code. 
-        </p><br>
-        <div class="w3-row-padding w3-center" style="margin-top:64px">
-          <div class="w3-quarter">
-            <i class='fas fa-laptop' style='font-size:65px;color:grey'></i>
-            <p class="w3-large">Responsive</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-          <div class="w3-quarter">
-            <i class='fas fa-laptop-code' style='font-size:65px;color:grey'></i>
-            <p class="w3-large">Code</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-          <div class="w3-quarter">
-            <i class='far fa-folder-open' style='font-size:65px;color:grey'></i>
-            <p class="w3-large">Storage</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-          </div>
-          <div class="w3-quarter">
-            <i class='far fa-list-alt' style='font-size:65px;color:grey'></i>
-            <p class="w3-large">Organize</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p><br><br>
-          </div>
-          <!--Button-->
-          <a href="{{url_for('application')}}" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity  w3-hover-opacity-on" role="button" >
-            Click here to begin
-          </a>
-        </div>
-      </div>
-</body>
-</html>
+</div>
+{%endblock %}
