@@ -6,7 +6,7 @@ Sign Up
 {%block body%}
 <br><br>
 <div class="container">
-  <h1>Register
+  <h1>Register</h1>
     <form action="" method ="POST">
       <div class="form-group">
         <input type="text" name="name" class="form-control" placeholder="name" required>
@@ -22,6 +22,6 @@ Sign Up
       </div>
       <button class="btn btn-primary" type="submit">Submit</button>
     </form>
-  </h1>
+    <a href="{{url_for('login')}}" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity  w3-hover-opacity-on" role="button">Cancel</a>
 </div>
 {%endblock %}

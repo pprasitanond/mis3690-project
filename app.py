@@ -78,6 +78,21 @@ def login():
 def userpage():
     return render_template("userpage.html")
 
+@app.route("/newnote", methods = ['GET','POST'])
+def newnote():
+    if request.method == "POST":
+        note_title = request.form.get("note_title")
+        timestamp = request.form.get("date")
+        note = request.form.get("note")
+
+        db.execute("INSERT INTO notes(note_title,timestamp, note) VALUES(:note_title, :timestamp, :note)",
+        {"note_title":note_title, "timestamp":timestamp, "note":note})
+        db.commit()
+
+        flash("Your note is created","success")
+
+    return render_template("newnote.html")
+
 @app.route("/logout")
 def logout():
     session.clear()

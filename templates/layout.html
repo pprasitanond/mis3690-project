@@ -19,7 +19,8 @@
     <!-- navbar links -->
       <div class="w3-right w3-hide-small">
         {% if session.log %}
-        <a href=# class="w3-bar-item w3-button">MY NOTE</a>
+        <a href="{{url_for('newnote')}}" class="w3-bar-item w3-button">CREATE NOTE</a>
+        <a href="{{url_for('userpage')}}" class="w3-bar-item w3-button">MY NOTE</a>
         <a href="{{url_for('logout')}}" class="w3-bar-item w3-button">LOG OUT</a>
         {% else %}
         <a href="{{url_for('about')}}" class="w3-bar-item w3-button">ABOUT</a>
@@ -37,7 +38,8 @@
     <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
       <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
       {% if session.log %}
-      <a href=# onclick="w3_close()" class="w3-bar-item w3-button">MY NOTE</a>
+      <a href="{{url_for('newnote')}}" onclick="w3_close()" class="w3-bar-item w3-button">CREATE NOTE</a>
+      <a href="{{url_for('userpage')}}" onclick="w3_close()" class="w3-bar-item w3-button">MY NOTE</a>
       <a href="{{url_for('logout')}}" onclick="w3_close()" class="w3-bar-item w3-button">LOG OUT</a>
       {% else %}
       <a href="{{url_for('about')}}" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
@@ -45,8 +47,9 @@
       <a href="{{url_for('application')}}" onclick="w3_close()" class="w3-bar-item w3-button">APP</a>
       {% endif %}
   </nav>
-   {%include "includes/_message.html"%}
+   {% include "includes/_message.html"%}
    {%block body%}
+   
    {%endblock %}
 </body>
 </html>

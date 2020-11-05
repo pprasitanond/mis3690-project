@@ -19,7 +19,6 @@ body, html {
     min-height: 100%;
 }
 
-
 /* login */
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
@@ -69,11 +68,6 @@ button:hover {
     padding: 16px;
     }
 
-/* The "Forgot password" text */
-span.psw {
-    float: right;
-    padding-top: 2px;
-    }
 
 /* Change styles for span and sign up button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -83,21 +77,12 @@ span.psw {
     }
     
     }
-
 /* sign up */
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-        height: 100%;
-        line-height: 1.8;
+form {
+    border: 3px solid #ffffff;
     }
-
-.w3-bar .w3-button {
-        padding: 16px;
-    }
-    /*Sign In Form Styling
-    /* Bordered form */
-    * {box-sizing: border-box}
+/* * {box-sizing: border-box} */
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -163,25 +148,7 @@ span.psw {
     }
     }
 
-/* team */
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-    }
-
-.w3-bar .w3-button {
-    padding: 16px;
-    }
-
-/* userpage */
-
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body, html {
-    height: 100%;
-    line-height: 1.8;
-    }
-
-.w3-bar .w3-button {
-    padding: 16px;
-    }
+/* Flashing message */
+.flashes{
+    margin-top:60px;
+}
