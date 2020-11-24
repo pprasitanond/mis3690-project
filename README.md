@@ -20,6 +20,9 @@ Node is a simple note taking app that allows users to create a profile and use i
 3. After all of these steps are followed, run the app.py file through either the terminal or command prompt using this following command: 
  <br/>step 1:  **export FLASK_ENV=development** 
  <br/>step 2: **flask run**
-Then follow the link to the URL and start taking notes!
+<br/>Then follow the link to the URL and start taking notes!
+
+## Directions for Running Code on Cloud
+1. Simply follow the URL for the application : https://nodetaking.herokuapp.com/ and start taking notes!
 
 
