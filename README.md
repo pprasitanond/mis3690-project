@@ -18,8 +18,8 @@ Node is a simple note taking app that allows users to create a profile and use i
 2. After the database is built correctly with all the names being exactly as above, the next step is to link the database into the *app.py* file. In line 7, the code starts with "engine = create_engine()". Inside the parentheses the format of the code needs to be: dialect+driver://username:password@host:port/database. Fill in the information and this will hook up the database to the app. 
 
 3. After all of these steps are followed, run the app.py file through either the terminal or command prompt using this following command: 
-  step1:  **export FLASK_ENV=development** 
-  step2: **flask run**
+ <br/>step 1:  **export FLASK_ENV=development** 
+ <br/>step 2: **flask run**
 Then follow the link to the URL and start taking notes!
 
 
